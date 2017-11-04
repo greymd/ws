@@ -9,11 +9,11 @@
       $.getJSON("./words.json", function(words) {
         elem = $("#words");
         words.forEach(function (word) {
-          elem.append('<tr>');
-          elem.append('<td>' + word["単語"] + '</td>');
-          elem.append('<td>' + word["品詞"] + '</td>');
-          elem.append('<td>' + word["意味"] + '</td>');
-          elem.append('</tr>');
+          elem.append('<tr>' +
+                      '<td>' + word["単語"] + '</td>' +
+                      '<td>' + word["品詞"] + '</td>' +
+                      '<td>' + word["意味"] + '</td>' +
+                      '</tr>');
         })
       });
     });
