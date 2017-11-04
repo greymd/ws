@@ -5,7 +5,7 @@
     <title>Async</title>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script>
-    $(function() {
+    $(document).ready(function() {
       $.getJSON("./words.json", function(words) {
         elem = $("#words");
         words.forEach(function (word) {
